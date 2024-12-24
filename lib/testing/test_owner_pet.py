@@ -1,5 +1,9 @@
 import pytest
-from owner_pet import Pet, Owner
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+from owner_pet import Owner, Pet
 
 def test_owner_init():
     """Test Owner class initialization"""
